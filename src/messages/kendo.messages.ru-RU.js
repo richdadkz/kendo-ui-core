@@ -603,5 +603,22 @@ kendo.ui.Filter.prototype.options.operators,
 }
 );
 }
+  
+/* ListBox messaages */
+
+if (kendo.ui.ListBox) {
+kendo.ui.ListBox.prototype.options.messages =
+$.extend(true, kendo.ui.ListBox.prototype.options.messages, {
+  "tools": {
+  "remove": "Удалить",
+  "moveUp": "Вверх",
+  "moveDown": "Вниз",
+  "transferTo": "Переместить В",
+  "transferFrom": "Переместить Из",
+  "transferAllTo": "Переместить все В",
+  "transferAllFrom": "Переместить все Из"
+  }
+});
+}
 
 })(window.kendo.jQuery);
